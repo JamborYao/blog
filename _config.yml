@@ -5,7 +5,7 @@
 # baseurl: ""
 url: http://jamboryao.github.io
 baseurl: /blog
-title: Jambor's blog
+title: Jambor's blog 1
 description: Some descriptions of yourself.
 avatar: /assets/img/ogp.png
 # favicon: /favicon.ico
@@ -19,7 +19,7 @@ language: en
 icons:
   rss: true
   email:
-  github: blog
+  github: jamboryao
   bitbucket:
   twitter: jambor
   facebook:
