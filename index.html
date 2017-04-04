@@ -1,15 +1,26 @@
-﻿---
+---
 layout: default
-title: Jambor Yao
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-
-
+{% for post in paginator.posts %}
+<div class="article-wrapper">
+    <article>
+    {% include article-header.html page=post link=true %}
+        <section class="post-content">
+            {% assign size = post.content | split: site.excerpt_separator | size %}
+            {% if size > 1 %}
+            {{ post.excerpt }}
+            <a class="btn" href="{{ post.url | prepend: site.baseurl }}">{{ site.str_read_more }}</a>
+            {% else %}
+            {{ post.content }}
+            {% endif %}
+        </section>
+    </article>
 </div>
+
+{% if forloop.last != true %}
+<hr/>
+{% endif %}
+{% endfor %}
+
+{% include paginator.html %}
