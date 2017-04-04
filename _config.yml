@@ -5,7 +5,7 @@
 # baseurl: ""
 url: http://jamboryao.github.io
 baseurl: /blog
-title: Jambor's blog 1
+title: Jambor's blog
 description: Some descriptions of yourself.
 avatar: /assets/img/ogp.png
 # favicon: /favicon.ico
