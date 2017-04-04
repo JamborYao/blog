@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 闲谈
+title: How to change Windows 7 & Windows 8.1dual boot menu
 tags: windows7 boot menu
 ---
 
@@ -48,7 +48,7 @@ bcdboot  c:\Windows
 
 ![](/images/blog/2017-04-04/command.png)
 
- Figure-5
+Figure-5
 
 ### Situation three:
 
