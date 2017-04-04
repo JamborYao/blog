@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Azure
-permalink: /azure/
+title: All Post
+permalink: /archives/all/
 order: 4
 share: false
 ---
