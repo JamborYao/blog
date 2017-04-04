@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Azure
-permalink: /about/
+permalink: /azure/
 order: 4
 share: false
 ---
