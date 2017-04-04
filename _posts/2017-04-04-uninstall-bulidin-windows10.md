@@ -19,16 +19,11 @@ Re-register this App:
 1.	Run the PowerShell as Administrator.
 2.	Type Get-AppxPackage, press Enter.
 3.	From the output list, find the Mail App and remember the InstallLocation as blew:
- 
-![](/images/blog/2017-04-04/install-location.png)
-
+ 	![](/images/blog/2017-04-04/install-location.png)
 4.	And then type this command:
-
-    Get-AppXPackage | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.4119.42011.0_x64__8wekyb3d8bbwe\AppxManifest.xml"}
-
+    `Get-AppXPackage | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.4119.42011.0_x64__8wekyb3d8bbwe\AppxManifest.xml"}`
 5.	It would run as below:
-
-![](/images/blog/2017-04-04/get-apppackage.png)
+	![](/images/blog/2017-04-04/get-apppackage.png)
 
 
 
@@ -41,15 +36,11 @@ If re-register App cannot resolve your issue, do the next.
 1.	Run the PowerShell as Administrator.
 2.	Type Get-AppxPackage, press Enter.
 3.	From the output list, find Mail App package and remember its PackageFullName as below:
-
-![](/images/blog/2017-04-04/package-fullname.png)
+	![](/images/blog/2017-04-04/package-fullname.png)
 4.	And then type the following command:
-
-    Remove-Appxpackage –Package microsoft.windowscommunicationsapps_17.4119.42011.0_x64__8wekyb3d8bbwe
-
+    `Remove-Appxpackage –Package microsoft.windowscommunicationsapps_17.4119.42011.0_x64__8wekyb3d8bbwe`
 5.	It would run as below:
- 
-![](/images/blog/2017-04-04/remove-apppackage.png)
+	![](/images/blog/2017-04-04/remove-apppackage.png)
 
 >Note: After running this command in Windows Insider Preview 10074 build, the Mail icon still appear in the App list and start menu. However, you cannot click to launch it. Just ignore and continue next step.
 
