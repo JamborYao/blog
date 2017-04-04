@@ -6,6 +6,15 @@ order: 4
 share: false
 ---
 
-[TtskchTheme](https://github.com/ttskch/jekyll-ttskch-theme) is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+<div id="search-results">
+    <hr id="first-hr" class="with-no-margin"/>
 
-Enjoy! :smiley:
+    {% for post in site.posts %}
+    <div class="article-wrapper">
+        <article>
+            {% include article-header.html page=post link=true share=false eye_catch=false %}
+        </article>
+    </div>
+    <hr class="with-no-margin"/>
+    {% endfor %}
+</div>
