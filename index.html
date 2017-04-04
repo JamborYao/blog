@@ -8,7 +8,7 @@ layout: default
     {% include article-header.html page=post link=true %}
         <section class="post-content">
             {% assign size = post.content | split: site.excerpt_separator | size %}
-            {% if size > 50 %}
+            {% if size > 0.1 %}
             {{ post.excerpt }}
             <a class="btn" href="{{ post.url | prepend: site.baseurl }}">{{ site.str_read_more }}</a>
             {% else %}
