@@ -5,7 +5,7 @@
 # baseurl: ""
 url: http://jamboryao.github.io
 baseurl: /blog
-title: Your name
+title: Jambor's blog
 description: Some descriptions of yourself.
 avatar: /assets/img/ogp.png
 # favicon: /favicon.ico
@@ -78,7 +78,7 @@ share_buttons:
   facebook: false # needs ogp.fb.app_id
   hatena: false
 ogp:
-  image_url: //jamboryao.github.io/blog/assets/img/ogp.png
+  image_url: //jamboryao.github.io/assets/img/ogp.png
   fb:
     admin: # facebook admin id
     app_id: # facebook application id
