@@ -4,9 +4,9 @@ title: 闲谈
 tags: windows7 boot menu
 ---
 
-##How to change Windows 7 & Windows 8.1dual boot menu 
+## How to change Windows 7 & Windows 8.1dual boot menu 
 
-###Situation one: 
+### Situation one: 
 
 When you install the Windows 8.1 on a Windows 7 based computer, the boot option is appearing as below:
  
@@ -31,7 +31,7 @@ Figure-2
 
 Figure-3
 
-###Situation two:
+### Situation two:
 
 When you install the Windows 7 on a Windows 8.1 based computer, the boot menu is appearing as below:
 
@@ -50,7 +50,7 @@ bcdboot  c:\Windows
 
  Figure-5
 
-Situation three:
+### Situation three:
 
 When you have dual boot system, one of the system disappear from the boot menu. We could follow these steps to get it back:
 
