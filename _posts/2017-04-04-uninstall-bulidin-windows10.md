@@ -20,7 +20,7 @@ Re-register this App:
 2.	Type Get-AppxPackage, press Enter.
 3.	From the output list, find the Mail App and remember the InstallLocation as blew:
  	![](/images/blog/2017-04-04/install-location.png)
-4.	And then type this command:
+4.	And then type this command:<br/>
     `Get-AppXPackage | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_17.4119.42011.0_x64__8wekyb3d8bbwe\AppxManifest.xml"}`
 5.	It would run as below:
 	![](/images/blog/2017-04-04/get-apppackage.png)
