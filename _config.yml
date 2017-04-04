@@ -3,8 +3,8 @@
 #
 # url: http://localhost:4000
 # baseurl: ""
-url: http://jamboryao.github.io
-baseurl: /blog
+url: http://jamboryao.github.io/blog
+baseurl: /
 title: Jambor's blog
 description: Some descriptions of yourself.
 avatar: /assets/img/ogp.png
